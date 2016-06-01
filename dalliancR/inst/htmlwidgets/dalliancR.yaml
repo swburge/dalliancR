@@ -1,0 +1,18 @@
+ dependencies:
+  - name: dalliance
+    version: 0.13.4
+    src: htmlwidgets/lib/dalliance
+    script: 
+      - build/dalliance-all.js
+      - build/dalliance-compiled.js
+    stylesheet:
+      - css/bootstrap-scoped.css
+      - css/font-awesome.min.css
+      - css/bootstrap.css
+      - css/dalliance-scoped.css
+      - css/dalliance.css
+  - name: dalliancR
+    version: 0.0.1
+    src: htmlwidgets
+    script:
+      - dalliancR.js
