@@ -5,12 +5,13 @@
 #' @import htmlwidgets
 #'
 #' @export
-dalliancR <- function(gene = "Sox2", dataset = NULL, width = NULL, height = NULL) {
+dalliancR <- function(gene = "Sox2", dataset = NULL, reset_tracks = NULL, width = NULL,height=NULL) {
 
   # forward options using x
   x = list(
     gene = gene,
-    dataset = dataset
+    dataset = dataset,
+    reset_tracks = reset_tracks
   )
 
   # create widget
@@ -41,7 +42,7 @@ dalliancR <- function(gene = "Sox2", dataset = NULL, width = NULL, height = NULL
 #'
 #' @export
 dalliancROutput <- function(outputId, width = '100%', height = '100%'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'dalliancR', width, height, package = 'dalliancR',
+  htmlwidgets::shinyWidgetOutput(outputId, 'dalliancR', width, height, package = 'dalliancR'
                                  )
 }
 
